@@ -5,6 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interno</title>
+ <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
   <link rel="stylesheet" href="style-interno.css">
 </head>
 
@@ -71,22 +81,20 @@
             avec nos services de design résidentiel sur mesure.
         </p>
 
-        <div class="contact-box">
-
-            <div class="phone-line">
-                <img src="asset/Call.png" alt="Téléphone">
+        <div class="txt-none">
+          <a href="01 23 45 67 8" class="flex align-center txt-none">
+                <i class="ph-fill ph-phone"></i>
+            <div >
                 <h4>01 23 45 67 89</h4>
                 <p>Appelez-nous n'importe quand</p>
             </div>
-
-            <a href="#contact" class="btn">Obtenez un devis gratuit</a>
-
+          </a>
+            <a href="#contact" class="btn mgt50 pad">Obtenez un devis gratuit</a>
         </div>
-
     </div>
 
     <!-- Colonne droite : image -->
-    <div class="right">
+    <div class="right-img">
         <img src="asset/image-article.jpg" alt="Cuisine moderne">
     </div>
 
@@ -94,33 +102,43 @@
 
 <!-- SECTION TEMOIGNAGES -->
 
-<section>
+<section class="temoignages">
+    <h2 class="section-title">Ils nous ont fait confiance</h2>
 
-        <h2>Ils nous ont fait confiance</h2>
-
-    <div>
-
-        <div>
-          <img src="asset/user1.png" alt="Nattasha Mith">
-          <h3>Nattasha Mith</h3>
-          <p class="city">Lyon</p>
-          <p>J'ai eu le plaisir de travailler avec Interno sur la rénovation complète de ma maison, et je suis extrêmement satisfaite du résultat !</p>
+    <div class="cards-container">
+        
+        <div class="card">
+            <div class="card-header">
+                <img src="asset/user3.png" alt="Nattasha Mith" class="avatar">
+                <div class="user-info">
+                    <h3 class="user-name">Nattasha Mith</h3>
+                    <p class="user-city">Lyon</p>
+                </div>
+            </div>
+            <p class="card-text">J'ai eu le plaisir de travailler avec Interno sur la rénovation complète de ma maison, et je suis extrêmement satisfaite du résultat !</p>
         </div>
 
-        <div class="testimonial-card">
-          <img src="asset/user2.png" alt="Mary Galario">
-          <h3>Mary Galario</h3>
-          <p class="city">Agen</p>
-          <p>Nous avons fait appel à leur équipe pour concevoir l'intérieur de notre nouveau bureau, et le résultat est incroyable.</p>
+        <div class="card">
+            <div class="card-header">
+                <img src="asset/user2.png" alt="Mary Galario" class="avatar">
+                <div class="user-info">
+                    <h3 class="user-name">Mary Galario</h3>
+                    <p class="user-city">Agen</p>
+                </div>
+            </div>
+            <p class="card-text">Nous avons fait appel à leur équipe pour concevoir l'intérieur de notre nouveau bureau, et le résultat est incroyable.</p>
         </div>
 
-        <div>
-          <img src="asset/user3.png" alt="Benny Roll">
-          <h3>Benny Roll</h3>
-          <p>Paris</p>
-          <p>Une expérience formidable ! Une équipe de designers talentueuse mais également très à l'écoute des besoins du client.</p>
+        <div class="card">
+            <div class="card-header">
+                <img src="asset/user1.png" alt="Benny Roll" class="avatar">
+                <div class="user-info">
+                    <h3 class="user-name">Benny Roll</h3>
+                    <p class="user-city">Paris</p>
+                </div>
+            </div>
+            <p class="card-text">Une expérience formidable ! Une équipe de designers talentueuse mais également très à l'écoute des besoins du client.</p>
         </div>
-
     </div>
 </section>
 

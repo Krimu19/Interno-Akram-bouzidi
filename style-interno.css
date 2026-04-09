@@ -13,6 +13,10 @@ body{
 .txt-center{
     text-align: center;
 }
+.txt-none{
+    text-decoration: none;
+    color: black;
+}
 
 .bold{
     font-weight: bold;
@@ -24,6 +28,9 @@ body{
 
 .txt-white{
     color: white;
+}
+.txt-black{
+    color: rgb(0, 0, 0);
 }
 
 .title-xl{
@@ -50,6 +57,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
 /*gap*/
 
 .gap20{ gap: 20px; }
@@ -57,6 +65,11 @@ body{
 .gap50{ gap: 50px; }
 .gap100{ gap: 100px; }
 
+.max-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
 /*marge*/
 .mgt50{ margin-top: 50px; }
 .mgt100{ margin-top: 100px; }
@@ -64,6 +77,9 @@ body{
 .mgb50{ margin-bottom: 50px; }
 .mgb100{ margin-bottom: 100px; }
 
+.pad{
+    padding: 30px;
+}
 /*flex*/
 
 .flex{
@@ -88,7 +104,6 @@ body{
 .btn{
     background-color: #2d2d2d;
     color: white;
-    padding: 15px 25px;
     text-decoration: none;
     border-radius: 10px;
     display: inline-block;
@@ -183,14 +198,17 @@ body{
     margin-bottom: 20px;
 }
 
-.phone-line {
+.ph-fill {
     display: flex;
     flex-direction: column;
 }
 
-.phone-line img {
+.ph-phone{
     width: 28px;
     height: 28px;
+    color: black;
+    font-size: 30px;
+    margin-right: 16px;
 }
 .btn {
     display: inline-block;
@@ -202,17 +220,78 @@ body{
     font-weight: 600;
 }
 .right-img {
-    width: 100%;
-    max-width: 520px;
-    border-radius: 20px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+/*SECTION TEMOIGNAGES*/
+
+/* Styles globaux de la section */
+.temoignages{
+    background-color: #F4F0EC; 
+    padding: 80px 20px;
+    font-family: Arial, sans-serif; 
+}
+
+.section-title {
+    text-align: center;
+    font-family: "Times New Roman", serif; 
+    font-size: 2.8rem;
+    color: #292F36;
+    margin-bottom: 60px;
+}
+
+/* --- Grille pour aligner les 3 cartes --- */
+.cards-container {
+    display: grid;
+    /* Crée des colonnes responsives : 1 colonne sur mobile, 3 sur PC */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centre la grille sur la page */
+}
+
+/* --- Style individuel des cartes --- */
+.card {
+    background-color: #FFFFFF;
+    border-radius: 40px; /* L'arrondi très prononcé des coins */
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03); /* Légère ombre pour détacher la carte du fond */
+}
+
+/* --- En-tête de la carte (Image + Noms) --- */
+.card-header {
+    display: flex;
+    align-items: center; 
+    gap: 20px; 
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%; 
     object-fit: cover;
 }
 
-/*section contact*/
-
-
-.max-1200 {
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
+/* Typographie à l'intérieur des cartes */
+.user-info h3 {
+    margin: 0 0 5px 0;
+    font-family: "Times New Roman", serif;
+    font-size: 1.2rem;
+    color: #292F36;
 }
+
+.user-city {
+    margin: 0;
+    color: #4D5053;
+    font-size: 0.9rem;
+}
+
+.card-text {
+    color: #4D5053;
+    line-height: 1.6; /* Améliore la lisibilité en aérant le texte */
+    font-size: 1rem;
+    margin: 0;
+}
+
