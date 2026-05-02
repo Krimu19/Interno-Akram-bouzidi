@@ -216,3 +216,15 @@ body{
     margin: 0 auto;
     width: 100%;
 }
+
+.container1000{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.w-30{
+    width: 30%;
+}
+.mgt30{
+    margin-top: 30px;
+}
